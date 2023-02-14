@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import {useEffect, useState} from "react";
+
 import './App.css';
+import {weatherService} from "./services/weather.service";
+import {useForm} from "react-hook-form";
+
 
 function App() {
+    const [weather, setWeather]= useState();
+    const [word, setWord] = useState('');
+    const {register, handleSubmit, reset, formState: {errors, isValid}} = useForm();
+    console.log(weather);
+
+
+    useEffect(()=>{
+        weatherService.getCity(word).then(value => setWeather(value));
+    }, [word]);
+
+
+
+    const submit = (data) => {
+        setWord(data.city)
+        console.log(data);
+        reset();
+    }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <form onSubmit={handleSubmit(submit)}>
+            <input type="text" {...register('city')}/>
+            <button>ok</button>
+        </form>
+
+        {word}
     </div>
   );
 }
