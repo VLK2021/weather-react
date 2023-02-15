@@ -1,3 +1,28 @@
 .form{
+    width: 100%;
+}
 
+input{
+    width: 80%;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    color: midnightblue;
+}
+
+button{
+    width: 10%;
+    border-radius: 0.8rem;
+    color: midnightblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.8rem 0.1rem;
+    position: relative;
+    right: 3.5rem;
+    background: snow;
+    border: none;
 }

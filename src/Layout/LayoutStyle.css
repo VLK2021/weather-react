@@ -1,3 +1,28 @@
 .layout {
+    width: 100%;
+    padding-top: 1rem;
 
+}
+
+.layout-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    width: 60%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: midnightblue;
+    text-shadow: 0.2rem 0.2rem 0.2rem chartreuse;
+}
+
+.layout-form{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }

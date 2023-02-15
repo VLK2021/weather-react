@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useForm} from "react-hook-form";
 
+import './FormStyle.css';
 import {weatherService} from "../../services/weather.service";
 
 
@@ -14,7 +15,6 @@ const Form = ({setWeather}) => {
 
     const submit = (data) => {
         setWord(data.city);
-        console.log(data);
         reset();
     }
 
@@ -32,11 +32,13 @@ const Form = ({setWeather}) => {
                         value: 25,
                         message: 'максимальна довжина 25 символів'
                     }
-                })}/>
-                <div>
+                })}
+                placeholder={'Enter city...'}
+                />
+                <button disabled={!isValid}>ok</button>
+                <div className={'error'}>
                     {errors?.city && <p>{errors?.city?.message || 'Error'}</p>}
                 </div>
-                <button disabled={!isValid}>ok</button>
             </form>
         </div>
     );
