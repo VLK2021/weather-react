@@ -10,7 +10,9 @@ const Form = ({setWeather}) => {
     const [word, setWord] = useState('');
 
     useEffect(() => {
-        weatherService.getCity(word).then(value => setWeather(value));
+        weatherService.getCity(word).then(value => {
+            setWeather(value);
+        });
     }, [word]);
 
     const submit = (data) => {
@@ -26,11 +28,11 @@ const Form = ({setWeather}) => {
                     required: 'Поле має бути заповнене!',
                     minLength: {
                         value: 3,
-                        message: 'мінімальна довжина імені 3 символів'
+                        message: 'мінімальна довжина імені 3 символи!'
                     },
                     maxLength: {
                         value: 25,
-                        message: 'максимальна довжина 25 символів'
+                        message: 'максимальна довжина 25 символів!'
                     }
                 })}
                 placeholder={'Enter city...'}

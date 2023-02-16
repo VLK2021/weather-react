@@ -1,7 +1,6 @@
 .layout {
     width: 100%;
     padding-top: 1rem;
-
 }
 
 .layout-header{
@@ -11,13 +10,14 @@
     align-items: center;
 }
 
-h1{
+.layout-header-tittle{
     width: 60%;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    color: midnightblue;
-    text-shadow: 0.2rem 0.2rem 0.2rem chartreuse;
+    font-size: 3.5rem;
+    color:skyblue;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
 }
 
 .layout-form{
@@ -26,3 +26,86 @@ h1{
     justify-content: end;
     align-items: center;
 }
+
+.layout-main{
+    width: 100%;
+}
+
+.layout-main-tittle{
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 4rem;
+    color: deepskyblue;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+.city-temp{
+    font-weight: bold;
+    font-size: 5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-main-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.layout-main-info-day-country{
+    text-align: center;
+}
+
+.layout-main-info-day-country-date{
+    color: deepskyblue;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.layout-main-info-day-country > p {
+    font-weight: bold;
+    font-size: 2rem;
+    color: deepskyblue;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+.info > img {
+    width: 9rem;
+}
+
+.info > p {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn > button{
+    width: 20rem;
+    background: midnightblue;
+    color: snow;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.layout-more-info{
+    width: 100%;
+    margin-top: 0.5rem;
+    opacity: 50%;
+}
+

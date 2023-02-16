@@ -1,0 +1,31 @@
+.information{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information-main, .information-clouds, .information-sun{
+    width: 33.3%;
+}
+
+.block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    padding: 0 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.information-sun > p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
