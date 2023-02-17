@@ -33,6 +33,10 @@ const Form = ({setWeather}) => {
                     maxLength: {
                         value: 25,
                         message: 'максимальна довжина 25 символів!'
+                    },
+                    pattern: {
+                        value: /^[а-яА-Яa-zA-Z]+$/,
+                        message: 'помилка вводу даних!'
                     }
                 })}
                 placeholder={'Enter city...'}
