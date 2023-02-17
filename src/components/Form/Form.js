@@ -35,7 +35,7 @@ const Form = ({setWeather}) => {
                         message: 'максимальна довжина 25 символів!'
                     },
                     pattern: {
-                        value: /^[а-яА-Яa-zA-Z]+$/,
+                        value: /^[a-zA-Zа-яёА-іІЇїєЄЁ]+$/,
                         message: 'помилка вводу даних!'
                     }
                 })}
