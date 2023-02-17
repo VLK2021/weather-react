@@ -39,7 +39,7 @@ const Form = ({setWeather}) => {
                         message: 'помилка вводу даних!'
                     }
                 })}
-                placeholder={'Enter city...'}
+                       placeholder={'Enter city...'}
                 />
                 <button disabled={!isValid}>ok</button>
                 <div className={'error'}>
