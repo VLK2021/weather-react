@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import './InformationStyle.css';
 
 
 const Information = ({weather}) => {
+
+    const [sun, setSun] = useState({});
+    const {results} = sun;
+
+    useEffect(() => {
+        fetch(`https://api.sunrise-sunset.org/json?lat=${weather.data.coord.lat}&lng=${weather.data.coord.lon}&date=today`)
+            .then(response => response.json())
+            .then(value => setSun(value))
+    }, [weather.data.coord.lat, weather.data.coord.lon]);
 
 
     return (
@@ -32,11 +41,26 @@ const Information = ({weather}) => {
             </div>
 
             <div className={'information-sun'}>
-                <p className={'block'}>Sunrise \ Sunset</p>
-
                 <div>
-                    <div>{}</div>
-                    <div>{}</div>
+                    <div className={'block'}>
+                        <p>Sunrise</p>
+                        <div>{results?.sunrise}</div>
+                    </div>
+
+                    <div className={'block'}>
+                        <p>Sunset</p>
+                        <div>{results?.sunset}</div>
+                    </div>
+
+                    <div className={'block'}>
+                        <p>Day length</p>
+                        <div>{results?.day_length}</div>
+                    </div>
+
+                    <div className={'block'}>
+                        <p>Visibility</p>
+                        <div>{weather.data.visibility}mi</div>
+                    </div>
                 </div>
             </div>
 

@@ -3,35 +3,35 @@
     padding-top: 1rem;
 }
 
-.layout-header{
+.layout-header {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.layout-header-tittle{
+.layout-header-tittle {
     width: 60%;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 3.5rem;
-    color:skyblue;
+    color: skyblue;
     text-shadow: 0.2rem 0.2rem 0.2rem black;
 }
 
-.layout-form{
+.layout-form {
     width: 40%;
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-.layout-main{
+.layout-main {
     width: 100%;
 }
 
-.layout-main-tittle{
+.layout-main-tittle {
     margin-top: 4rem;
     width: 100%;
     text-align: center;
@@ -42,7 +42,7 @@
     text-shadow: 0.2rem 0.2rem 0.2rem black;
 }
 
-.city-temp{
+.city-temp {
     font-weight: bold;
     font-size: 5rem;
     color: black;
@@ -51,7 +51,7 @@
     justify-content: center;
 }
 
-.layout-main-info{
+.layout-main-info {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -59,11 +59,11 @@
     margin-top: 3rem;
 }
 
-.layout-main-info-day-country{
+.layout-main-info-day-country {
     text-align: center;
 }
 
-.layout-main-info-day-country-date{
+.layout-main-info-day-country-date {
     color: deepskyblue;
     text-shadow: 0.2rem 0.2rem 0.2rem black;
     font-weight: bold;
@@ -87,13 +87,13 @@
     font-size: 1.2rem;
 }
 
-.btn{
+.btn {
     width: 100%;
     text-align: center;
     margin-top: 1rem;
 }
 
-.btn > button{
+.btn > button {
     width: 20rem;
     background: midnightblue;
     color: snow;
@@ -103,7 +103,7 @@
     cursor: pointer;
 }
 
-.layout-more-info{
+.layout-more-info {
     width: 100%;
     margin-top: 0.5rem;
     opacity: 50%;
