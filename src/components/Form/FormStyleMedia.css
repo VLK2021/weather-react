@@ -1,16 +1,17 @@
 @media screen and (max-width: 700px) {
     .form {
+        width: 100%;
         text-align: center;
     }
 
     input {
-        width: 9rem;
+        width: 80%;
         border-radius: 0.5rem;
         padding: 0.7rem;
     }
 
     button {
-        width: 9rem;
+        width: 80%;
         padding: 0.7rem;
         border-radius: 0.5rem;
         color: snow;
