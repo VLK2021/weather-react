@@ -1,0 +1,13 @@
+@media screen and (max-width: 700px) {
+    .information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .information-main, .information-sun, .information-clouds {
+        width: 90%;
+        margin-bottom: 0.5rem;
+    }
+}

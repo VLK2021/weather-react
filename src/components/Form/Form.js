@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useForm} from "react-hook-form";
 
 import './FormStyle.css';
+import './FormStyleMedia.css';
 import {weatherService} from "../../services/weather.service";
 
 

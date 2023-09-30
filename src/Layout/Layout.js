@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 import './LayoutStyle.css';
+import './LayoutStyleMedia.css';
 import Form from "../components/Form/Form";
 import Information from "../components/Information/Information";
 

@@ -1,0 +1,29 @@
+@media screen and (max-width: 700px) {
+    .layout-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layout-header-tittle {
+        font-size: 2rem;
+    }
+
+    .layout-main-tittle {
+        font-size: 4rem;
+        margin-top: 2rem;
+        padding: 0.5rem;
+    }
+
+    .layout-main-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn > button {
+        width: 80%;
+    }
+}
